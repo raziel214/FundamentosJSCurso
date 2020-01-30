@@ -54,21 +54,28 @@ if (persona.drone) {
 
 const MAYORIA_DE_EDAD=18
 
-function esMayorDeEdad(persona) {
-
-  return persona.edad >= mayoriaDeEdad
-
-}
+const esMayorDeEdad =({edad})=>edad>=MAYORIA_DE_EDAD
+// function esMayorDeEdad(persona) {
+//
+//   return persona.edad >= mayoriaDeEdad
+//
+// }
 
 function imptimirSiEsMayordeEdad(persona) {
 
-  if (esMayorDeEdad(persona)) {
+    if (esMayorDeEdad(persona)) {
 
-    console.log(`${persona.nombre} es mayor de edad`)
+      console.log(`${persona.nombre} es mayor de edad`)
 
-  }
-  else{
-    console.log(`${persona.nombre} es menor de edad`)
+    }
+    else{
+      console.log(`${persona.nombre} es menor de edad`)
+    }
+
+}
+function permitirAcceso(persona) {
+  if (!esMayorDeEdad(persona)) {
+    console.log('ACCESO DENEGADO')
   }
 
 }
