@@ -8,6 +8,16 @@ var john ={
   gutarrista:false,
   drone:false
 }
+var ibeth ={
+  nombre:'ibeth',
+  apellido:'pacheco',
+  edad:17,
+  ingeniero:true,
+  cocinero:false,
+  dj:false,
+  gutarrista:false,
+  drone:false
+}
 function imprimirprofesiones(persona) {
 
   console.log(`${persona.nombre} es:`)
@@ -42,12 +52,23 @@ if (persona.drone) {
 }
 //imprimirprofesiones(john)
 
+const MAYORIA_DE_EDAD=18
+
+function esMayorDeEdad(persona) {
+
+  return persona.edad >= mayoriaDeEdad
+
+}
+
 function imptimirSiEsMayordeEdad(persona) {
 
-  if (persona.edad>18) {
+  if (esMayorDeEdad(persona)) {
 
     console.log(`${persona.nombre} es mayor de edad`)
 
+  }
+  else{
+    console.log(`${persona.nombre} es menor de edad`)
   }
 
 }
