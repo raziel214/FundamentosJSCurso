@@ -55,6 +55,9 @@ if (signo!=null) {
       break;
 
     default:
+      console.log(`No es un signo zodiacal valido`)
+      break;
+
 
   }
 
