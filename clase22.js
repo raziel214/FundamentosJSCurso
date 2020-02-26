@@ -42,9 +42,10 @@ var  paula  =  {
 }
 
 
-function Persona(nombre, apellido) {
+function Persona(nombre, apellido,altura) {
     this.nombre = nombre
     this.apellido = apellido
+    this.altura = altura
 }
 
 Persona.prototype.saludar = function () {
@@ -53,13 +54,16 @@ Persona.prototype.saludar = function () {
 }
 
 Persona.prototype.soyAlto=function(){
-    if (this.altura > 1.8){
-        return console.log(`Soy ${this.nombre} y soy de estatura alta`);
+   
+    //return this.altura>1.8
+   
+    if (this.altura >= 1.8){
+        return console.log(`Soy ${this.nombre} y soy de estatura alta ${this.altura} `);
     }else{
-        return console.log(`Soy ${this.nombre} y soy de estatura baja`);
+        return console.log(`Soy ${this.nombre} y soy de estatura baja ${this.altura} `);
     }
 }
 
-var sacha = new Persona('Sacha', 'Lifszyc',180)
+var sacha = new Persona('Sacha', 'Lifszyc',1.80)
 var erika = new Persona('Erika', 'Luna',1.60)
 var arturo = new Persona('Arturo', 'Martinez',1.55)
