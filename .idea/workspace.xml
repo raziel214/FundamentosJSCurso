@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b67eed7b-9543-4798-b1ab-6d8f9ca0f3d0" name="Default Changelist" comment="/">
-      <change afterPath="$PROJECT_DIR$/clase23.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clase23.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clase24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clase24.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clase21.js" beforeDir="false" afterPath="$PROJECT_DIR$/clase21.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clase23.js" beforeDir="false" afterPath="$PROJECT_DIR$/clase23.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,9 @@
       <workItem from="1582488278631" duration="345000" />
       <workItem from="1582509461877" duration="1435000" />
       <workItem from="1582597530565" duration="2066000" />
-      <workItem from="1582681101504" duration="811000" />
+      <workItem from="1582681101504" duration="2488000" />
+      <workItem from="1582768178412" duration="3781000" />
+      <workItem from="1582846047999" duration="1786000" />
     </task>
     <servers />
   </component>
@@ -68,9 +70,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582681100109">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582846062220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582681100109" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582846062220" />
   </component>
 </project>

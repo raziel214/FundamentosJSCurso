@@ -58,6 +58,7 @@ Persona.prototype.soyAlto=function(){
     //return this.altura>1.8
 
     if (this.altura >= 1.8){
+
         return console.log(`Soy ${this.nombre} y soy de estatura alta ${this.altura} `);
     }else{
         return console.log(`Soy ${this.nombre} y soy de estatura baja ${this.altura} `);
