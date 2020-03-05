@@ -1,4 +1,3 @@
-/*
 
 var  sacha  =  {
     nombre : 'Sacha' ,
@@ -41,31 +40,39 @@ var  paula  =  {
     altura : 1.76 ,
     cantidadDeLibros : 182
 }
-*/
 
-/*function heredaDe(prototipoHijo, prototipoPadre) {
+function heredaDe(prototipoHijo, prototipoPadre) {
     var fn = function () {}
     fn.prototype = prototipoPadre.prototype
     prototipoHijo.prototype = new fn
     prototipoHijo.prototype.constructor = prototipoHijo
-  }*/
+  }
 
 class Persona {
+  constructor  (nombre, apellido,altura) {
+        this.nombre = nombre
+        this.apellido = apellido
+        this.altura = altura
+ }
 
-      constructor(nombre, apellido,altura) {
-            this.nombre = nombre
-            this.apellido = apellido
-            this.altura = altura
-     }
-
-     saludar(){
-        console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
-     }
-     soyAlto(){
-        console.log(`Soy ${this.nombre} y soy de estatura alta ${this.altura} `);
-
-     }
+ saludar(){
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+ }
+ soyAlto(){
+    console.log(`Soy ${this.nombre} y soy de estatura alta ${this.altura} `);
+    
+ }
 }
+
+class Desarrollador extends Persona {
+    constructor(nombre, apellido, altura) {
+      super(nombre, apellido, altura)
+    }
+  
+    saludar() {
+      console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador/a`)
+    }
+  }
 
 // //function Persona{}
 
@@ -83,32 +90,20 @@ class Persona {
 //         return console.log(`Soy ${this.nombre} y soy de estatura baja ${this.altura} `);
 //     }
 // }
+// function Desarrollador(nombre, apellido) {
 
-class Desarrollador extends Persona{
-    constructor(nombre, apellido, altura) {
-        super(nombre, apellido, altura)
-    }
-
-    saludar() {
-        console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador/a`)
-    }
-
-}
-
-/*function Desarrollador(nombre, apellido) {
-
-    this.nombre=nombre;
-    this.apellido=apellido;
+//     this.nombre=nombre;
+//     this.apellido=apellido;
   
 
-}*/
+// }
 // heredaDe (Desarrollador,Persona)
 
- Desarrollador.prototype.saludar=function(){
+//  Desarrollador.prototype.saludar=function(){
 
-    console.log (`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador `)
+//     console.log (`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador `)
 
-}  
+// }  
 
 
 
